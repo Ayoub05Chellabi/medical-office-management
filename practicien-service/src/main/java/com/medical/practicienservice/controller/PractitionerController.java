@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/practitioners")
+@RequestMapping("/practiciens")
 public class PractitionerController {
     @Autowired
     private PractitionerService practitionerService;

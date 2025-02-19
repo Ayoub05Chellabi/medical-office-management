@@ -15,6 +15,11 @@ public class PractitionerService {
     private final List<Practitioner> practitioners = new ArrayList<>();
     private final AtomicLong idCounter = new AtomicLong();
 
+
+    public PractitionerService() {
+        practitioners.add(new Practitioner(idCounter.getAndIncrement(), "Doe", "Neurologie", "john.doe@example.com", "000000000"));
+
+    }
     // Récupérer tous les praticiens
     public List<Practitioner> getAllPractitioners() {
         return practitioners;
