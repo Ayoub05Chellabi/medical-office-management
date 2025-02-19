@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: practitioner-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      practitionerService:
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5000ms
+        permittedNumberOfCallsInHalfOpenState: 2
+        slidingWindowSize: 5
+
+  retry:
+    instances:
+      practitionerRetry:
+        maxAttempts: 3
+        waitDuration: 2000ms
