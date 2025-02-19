@@ -1,8 +1,8 @@
-package com.medical.practicienservice.controller;
+package com.medical.practitionerservice.controller;
 
 
-import com.medical.practicienservice.entity.Practitioner;
-import com.medical.practicienservice.service.PractitionerService;
+import com.medical.practitionerservice.entity.Practitioner;
+import com.medical.practitionerservice.service.PractitionerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/practiciens")
+@RequestMapping("/practitioners")
 public class PractitionerController {
     @Autowired
     private PractitionerService practitionerService;

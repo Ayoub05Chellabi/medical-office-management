@@ -13,10 +13,10 @@ spring:
           predicates:
             - Path=/patients/**
 
-        - id: practicien-service
-          uri: lb://practicien-service
+        - id: practitioner-service
+          uri: lb://practitioner-service
           predicates:
-            - Path=/practiciens/**
+            - Path=/practitioners/**
 
 eureka:
   client:

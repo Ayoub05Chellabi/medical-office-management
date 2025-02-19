@@ -1,13 +1,13 @@
-package com.medical.practicienservice;
+package com.medical.practitionerservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PracticienServiceApplication {
+public class PractitionerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PracticienServiceApplication.class, args);
+        SpringApplication.run(PractitionerServiceApplication.class, args);
     }
 
 }

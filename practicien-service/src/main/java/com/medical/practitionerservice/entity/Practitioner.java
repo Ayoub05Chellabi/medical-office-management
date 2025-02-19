@@ -1,4 +1,4 @@
-package com.medical.practicienservice.entity;
+package com.medical.practitionerservice.entity;
 
 public class Practitioner {
     private Long id;

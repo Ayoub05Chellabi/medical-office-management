@@ -1,10 +1,10 @@
-package com.medical.practicienservice;
+package com.medical.practitionerservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PracticienServiceApplicationTests {
+class PractitionerServiceApplicationTests {
 
     @Test
     void contextLoads() {
