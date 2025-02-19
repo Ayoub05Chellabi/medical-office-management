@@ -13,6 +13,20 @@ public class PatientService {
     private final List<Patient> patients = new ArrayList<>();
     private final AtomicLong idCounter = new AtomicLong();
 
+
+    public PatientService() {
+        patients.add(new Patient(idCounter.getAndIncrement(), "Doe", "John", 30, "john.doe@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Smith", "Alice", 25, "alice.smith@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Johnson", "Robert", 40, "robert.johnson@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Brown", "Emily", 35, "emily.brown@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Davis", "Michael", 50, "michael.davis@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Miller", "Sophia", 29, "sophia.miller@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Wilson", "Daniel", 42, "daniel.wilson@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Moore", "Olivia", 37, "olivia.moore@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Taylor", "James", 45, "james.taylor@example.com"));
+        patients.add(new Patient(idCounter.getAndIncrement(), "Anderson", "Emma", 28, "emma.anderson@example.com"));
+    }
+
     // Récupérer tous les patients
     public List<Patient> getAllPatients() {
         return patients;
